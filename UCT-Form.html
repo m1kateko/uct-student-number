@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="UCT-Form.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>UCT-Form</title>
+</head>
+
+<body onload="document.form.firstName.focus()">
+<div id="centrePiece" class="centrePiece" width="500" align="center">
+	<div id ="centrePieceChild" width="300">
+<p><img src="Unnamed Site 2/University_of_Cape_Town_logo.png"  alt=""/></p>
+<h1> <strong>UCT student number generator</strong></h1>
+<form id="form1" name="form1" method="post">
+<label for="textfield">First name:</label>
+
+<input name="firstName" type="text" required="required" id="firstName" form="form1" placeholder="Enter your first name" align="left">
+<br>
+	<br>
+<label for="textfield2">Surname:</label>
+<input name="lastName" type="text" required="required" id="lastName" form="form1" placeholder="Enter your surname" align="left">
+<br>
+	<br>
+<button type="button" class="myButton" id="myButton">SUBMIT</button>
+<button type="button" class="clearButton" id="clearButton" onClick="window.location.reload();">CLEAR</button>
+</form>
+		</div>
+</div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p id="studentNumberOutput">Output here</p>
+  </div>
+</div>
+<script src="UCT-Form.js"></script>
+</body>
+</html>
